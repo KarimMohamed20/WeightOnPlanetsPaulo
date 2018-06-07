@@ -149,7 +149,7 @@ class _HomeState extends State<Home> {
     if(int.parse(weight).toString().isNotEmpty &&  int.parse(weight) > 0){
       return int.parse(weight) * multiplier;
     } else {
-      _formattedText = "Wrong Try To Enter Another Number";
+      print("Wrong!");
       return int.parse("180") * 0.38; // give a default weight! Be creative!
     }
 
